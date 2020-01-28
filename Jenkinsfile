@@ -1,4 +1,4 @@
-@Library('dis-shared-cicd@master') _
+@Library('Jenkins-Shared-Lib@master') _
 
 deployKafkaConnect {
   configFolder = "jdbc-sink-connector-config-json"
