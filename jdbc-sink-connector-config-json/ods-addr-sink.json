@@ -3,7 +3,7 @@
   "config": {
     "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
     "tasks.max": "1",
-    "topics": "${topicPrifix}db.RMS.ADDR",
+    "topics": "${topicPrefix}db.RMS.ADDR",
     "connection.url": "${vault:app-flow-kv/data/${env}/db:ods_db_kafka_url:${env}}",
     "connection.user": "${vault:app-flow-kv/data/${env}/db:ods_db_kafka_user:${env}}",
     "connection.password": "${vault:app-flow-kv/data/flowsecretdirectory/${env}/ods/system/rw:mpa_infa:${env}}",
